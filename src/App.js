@@ -1,22 +1,23 @@
-import logo from './logo.svg';
+import {useState} from 'react';
+
 import './App.css';
+import './index.css';
+import factorisator from './factoriser';
 
 function App() {
+
+const [num, setNum] = useState(0)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        La factorielle de
+        <input data-testid="main-input" type="number" value={num} min={0} onChange={e => setNum(e.target.value)} className ='input'/>
+        est
+        <span data-testid="output-value">
+          {factorisator(num)}
+        </span>
+
       </header>
     </div>
   );

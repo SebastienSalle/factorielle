@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.input {
+  color: white;
+  background-color: transparent;
+  border: solid 2px grey;
+  border-radius: 15px;
+  padding: 2px;
+  margin: 5px ;
+  text-align: center;
+  width: 10%;
+  font-size: calc(10px + 2vmin)
+}
+
+.input:hover {
+  background-color: grey;
+}
+
+.input:focus {
+  color: black;
+  outline: 1px solid white;
+  background-color: grey;
+}
+
+.input:invalid {
+  background-color: lightcoral;
+  color:brown;
+  border-color: brown;
+}
