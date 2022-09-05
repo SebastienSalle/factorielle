@@ -2,7 +2,7 @@ import {useState} from 'react';
 
 import './App.css';
 import './index.css';
-import factorisator from './factoriser';
+import factorial from './factoriser';
 
 function App() {
 
@@ -15,7 +15,7 @@ const [num, setNum] = useState(0)
         <input data-testid="main-input" type="number" value={num} min={0} onChange={e => setNum(e.target.value)} className ='input'/>
         est
         <span data-testid="output-value">
-          {factorisator(num)}
+          {factorial(num)}
         </span>
 
       </header>

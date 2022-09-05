@@ -1,7 +1,7 @@
-export default function factorisator (data) {
+export default function factorial (n) {
 
-    if(+data <= 1){return 1}
-    return +data * factorisator(+data-1)
+    if(+n <= 1){return 1}
+    return +n * factorial(+n-1)
 
 };
 
